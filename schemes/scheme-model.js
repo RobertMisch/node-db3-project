@@ -48,7 +48,7 @@ function add(scheme) {
   */
 
 //UD
-function update(id, changes) {
+function update(changes, id) {
     return db("schemes")
         .where({ id })
         .update(changes)
